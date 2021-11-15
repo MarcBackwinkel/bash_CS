@@ -1,14 +1,13 @@
-- <Befehl> -help / -h / --help     oder     man <Befehl>     oder     info <Befehl>
+- <Befehl> -help / --h / --help     oder     man <Befehl>     oder     info <Befehl>
 - Redirection in Dateien > output
 - Lesen aus Dateien < input
 - leere Datei: /dev/null
 - mehrere Kommandos in einer Zeile mit ; trennen
 - Wildcards: * - beliebige Zeichen; ? - genau ein beliebiges Zeichen; [Zeichenmenge] - beliebiges Zeichen aus Menge ([Aa], [a-c], [!a-z], ); 
-- 
+- Zeilenumbruch für lange Befehle mit \ am Zeilenende
 
 Befehle:
-- cat (= concat)
-- cmd
-- cp
-- echo
-- sort
+- cat (= concat)    # Concatenate File(s) to standard output
+- cp                # copy source(s) to dest(n)
+- echo              # print arguments
+- sort              # Write sorted concatenation of all FILE(s) to standard output.
