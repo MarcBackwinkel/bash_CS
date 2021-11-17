@@ -9,5 +9,10 @@
 Befehle:
 - cat (= concat)    # Concatenate File(s) to standard output
 - cp                # copy source(s) to dest(n)
+- cut               # cuts out fields, bytes or chars from file?; needs parameter -f (fields), -b (bytes) or -c (chars); --complement inverts logic
 - echo              # print arguments
+- grep              # search pattern in lines
+- head              # show first lines of file
 - sort              # Write sorted concatenation of all FILE(s) to standard output.
+- tail              # show last lines of file
+- uniq              # removes duplicate lines
