@@ -7,6 +7,7 @@
 - Zeilenumbruch für lange Befehle mit \ am Zeilenende
 - Programmabbruch durch Strg-C
 - Standardeingabe abbrechen durch Strg-D
+- Kombinieren von mehreren Kommandos mit Pipe | ; cmd1 | cmd2 verbindet Ausgang von cmd1 mit Eingang von cmd2
 
 Befehle:
 - cat (= concat)    # Concatenate File(s) to standard output
