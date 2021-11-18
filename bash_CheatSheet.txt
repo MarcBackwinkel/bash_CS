@@ -21,3 +21,6 @@ Befehle:
 - sort              # Write sorted concatenation of all FILE(s) to standard output.
 - tail              # show last lines of file
 - uniq              # removes duplicate lines
+
+Skripte erstellen
+- Start des Skripts immer mit shebang #!, gefolgt von /bin/bash als zuständigem Interpreter des Skripts
