@@ -9,6 +9,7 @@
 - Standardeingabe abbrechen durch Strg-D
 - Kombinieren von mehreren Kommandos mit Pipe | ; cmd1 | cmd2 verbindet Ausgang von cmd1 mit Eingang von cmd2
             - Standard-Output oder -Error können gezielt in die Pipe geschickt werden via "m>&n" (S. 53)
+- Command Substituation via cmd1 $(cmd2) --> die Ausgabe von cmd2 dient als Parameter für cmd1
 
 Befehle:
 - cat (= concat)    # Concatenate File(s) to standard output
