@@ -12,6 +12,7 @@
 - Command Substituation via cmd1 $(cmd2) --> die Ausgabe von cmd2 dient als Parameter für cmd1
 
 Befehle:
+--                  # most commands do not interpret any input after -- as further options
 - cat (= concat)    # Concatenate File(s) to standard output
 - cp                # copy source(s) to dest(n)
 - cut               # cuts out fields, bytes or chars from file?; needs parameter -f (fields), -b (bytes) or -c (chars); --complement inverts logic
