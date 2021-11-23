@@ -20,6 +20,7 @@ Befehle:
 - head              # show first lines of file
 - sort              # Write sorted concatenation of all FILE(s) to standard output.
 - tail              # show last lines of file
+- touch             # a file argument that does not exist is created empty (exception: -c / -h)
 - uniq              # removes duplicate lines
 
 Skripte erstellen
