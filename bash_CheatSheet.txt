@@ -19,6 +19,7 @@ Befehle:
 - echo              # print arguments
 - grep              # search pattern / RegEx in lines
 - head              # show first lines of file
+- less              # show content pagewise, search next with "/", search previous with "?"
 - sort              # Write sorted concatenation of all FILE(s) to standard output.
 - tail              # show last lines of file
 - touch             # a file argument that does not exist is created empty (exception: -c / -h)
