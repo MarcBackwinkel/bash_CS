@@ -1,5 +1,5 @@
 - <Befehl> -help / --h / --help     oder     man <Befehl>     oder     info <Befehl>
-- Redirection in Dateien > output
+- Redirection in Dateien > output (ueberschreibt bestehende Dateien), >> (haengt Input an bestehende Dateien an)
 - Lesen aus Dateien < input
 - leere Datei: /dev/null
 - mehrere Kommandos in einer Zeile mit ; trennen
@@ -25,11 +25,13 @@ Befehle:
 - head              # show first lines of file
 - id                # display my user 
 - less              # show content pagewise, search next with "/", search previous with "?", search next with "n"
+- man               # call man-page, use man -f "..." to search for an unknown function 
 - pssswd            # change Password
 - pwd               # print working directory
 - sort              # Write sorted concatenation of all FILE(s) to standard output.
 - tail              # show last lines of file
 - touch             # a file argument that does not exist is created empty (exception: -c / -h)
+- tr                # translates files, e.g. echo Hello | tr a-z A-Z => HELLO (wandelt Klein- in Grossbuchstaben um)
 - uniq              # removes duplicate lines
 
 Skripte erstellen
