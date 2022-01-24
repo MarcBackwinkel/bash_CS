@@ -23,6 +23,7 @@ Befehle:
 - find              # find in a directory a file, alternative: use "locate" after files are indexed
 - grep              # search pattern / RegEx in lines
 - head              # show first lines of file
+- id                # display my user 
 - less              # show content pagewise, search next with "/", search previous with "?", search next with "n"
 - pssswd            # change Password
 - pwd               # print working directory
