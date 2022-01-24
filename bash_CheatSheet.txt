@@ -14,12 +14,18 @@
 Befehle:
 --                  # most commands do not interpret any input after -- as further options
 - cat (= concat)    # Concatenate File(s) to standard output
+- chsh              # change shell (zsh, ksh, ,tcsh, bash)
 - cp                # copy source(s) to dest(n)
 - cut               # cuts out fields, bytes or chars from file?; needs parameter -f (fields), -b (bytes) or -c (chars); --complement inverts logic
+- diff              # print differences between two files
 - echo              # print arguments
+- file              # print format of a file
+- find              # find in a directory a file, alternative: use "locate" after files are indexed
 - grep              # search pattern / RegEx in lines
 - head              # show first lines of file
-- less              # show content pagewise, search next with "/", search previous with "?"
+- less              # show content pagewise, search next with "/", search previous with "?", search next with "n"
+- pssswd            # change Password
+- pwd               # print working directory
 - sort              # Write sorted concatenation of all FILE(s) to standard output.
 - tail              # show last lines of file
 - touch             # a file argument that does not exist is created empty (exception: -c / -h)
