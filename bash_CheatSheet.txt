@@ -1,5 +1,6 @@
 - <Befehl> -help / --h / --help     oder     man <Befehl>     oder     info <Befehl>
-- Redirection in Dateien > output (ueberschreibt bestehende Dateien), >> (haengt Input an bestehende Dateien an)
+- Redirection des Output-Streams in Dateien > output (ueberschreibt bestehende Dateien), >> (haengt Input an bestehende Dateien an)
+- Redirection des Standard Errors in Dateien mit 2>, z.B. ls /ffffffffffff > file 2> error_file
 - Lesen aus Dateien < input
 - leere Datei: /dev/null
 - mehrere Kommandos in einer Zeile mit ; trennen
@@ -11,9 +12,14 @@
             - Standard-Output oder -Error können gezielt in die Pipe geschickt werden via "m>&n" (S. 53)
 - Command Substituation via cmd1 $(cmd2) --> die Ausgabe von cmd2 dient als Parameter für cmd1
 
+- File Permissions - usr grp rst --> 1st: file (-), dir (d), link (l)
+- chmod u +r (user receives reading rights), g +w (group), o -w (other)
+- chmod 664 => -rw-r--r-- (6 => 110 | 4 => 100 | 4 => 100)
+
 Befehle:
 --                  # most commands do not interpret any input after -- as further options
 - cat (= concat)    # Concatenate File(s) to standard output
+- chmod             # modify file / dir permissions
 - chsh              # change shell (zsh, ksh, ,tcsh, bash)
 - cp                # copy source(s) to dest(n)
 - cut               # cuts out fields, bytes or chars from file?; needs parameter -f (fields), -b (bytes) or -c (chars); --complement inverts logic
@@ -24,12 +30,17 @@ Befehle:
 - grep              # search pattern / RegEx in lines
 - head              # show first lines of file
 - id                # display my user 
+- kill              # kill pid quits a process; kill -STOP pid & kill -CONT pid pause and resume a process
 - less              # show content pagewise, search next with "/", search previous with "?", search next with "n"
+- ln                # create symbolic link with ln -s <target_directory> <link_name>
 - man               # call man-page, use man -f "..." to search for an unknown function 
 - pssswd            # change Password
 - pwd               # print working directory
+- ps                # list running processes
 - sort              # Write sorted concatenation of all FILE(s) to standard output.
 - tail              # show last lines of file
+- tar               # pack with tar cvfz archive.tar file(s), unpack with tar xvfz archive.tar | args: create/unpack; verbose; files; zip!
+                    # check what's in the tar file before unpacking with tar tvfz archive.tar; preserve permissions with arg "p"
 - touch             # a file argument that does not exist is created empty (exception: -c / -h)
 - tr                # translates files, e.g. echo Hello | tr a-z A-Z => HELLO (wandelt Klein- in Grossbuchstaben um)
 - uniq              # removes duplicate lines
