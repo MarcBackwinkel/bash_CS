@@ -12,7 +12,7 @@
             - Standard-Output oder -Error können gezielt in die Pipe geschickt werden via "m>&n" (S. 53)
 - Command Substituation via cmd1 $(cmd2) --> die Ausgabe von cmd2 dient als Parameter für cmd1
 
-- File Permissions - usr grp rst --> 1st: file (-), dir (d), link (l)
+- File Permissions - usr grp rst --> 1st char: file (-), dir (d), link (l), devices: block (b), character (c), pipe (p) and socket (s)
 - chmod u +r (user receives reading rights), g +w (group), o -w (other)
 - chmod 664 => -rw-r--r-- (6 => 110 | 4 => 100 | 4 => 100)
 
@@ -22,6 +22,7 @@ Befehle:
 - chmod             # modify file / dir permissions
 - chsh              # change shell (zsh, ksh, ,tcsh, bash)
 - cp                # copy source(s) to dest(n)
+- 
 - cut               # cuts out fields, bytes or chars from file?; needs parameter -f (fields), -b (bytes) or -c (chars); --complement inverts logic
 - diff              # print differences between two files
 - echo              # print arguments
@@ -47,3 +48,18 @@ Befehle:
 
 Skripte erstellen
 - Start des Skripts immer mit shebang #!, gefolgt von /bin/bash als zuständigem Interpreter des Skripts
+
+cronjobs
+- define what you regularly want to run in the crontab file, like
+            09 * * * /home/user/bin/spmake
+            09                      minute
+               *                    hour (multiple values may be separated by comma (e.g. 5, 14)
+                 *                  day of month
+                   *                month
+                     /file          /path/file to run
+- crontab file                      # install crontab file
+- crontab -l                        # list all cronjobs
+- crontab -r                        # remove crontab
+- crontab -e                        # edit crontab
+- crontabs should be found in /var/spool/cron/crontabs, /etc/crontab or /etc/cron.d
+- for further information see crontab(5) manual page (man 5 crontab)
